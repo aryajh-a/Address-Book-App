@@ -9,7 +9,7 @@ root.geometry("330x320")
 # CREATE A DATABASE OR CONNECT TO ONE
 # creating
 db1=sqlite3.connect("AddressBook.db")
-# creating cursor -> cursor is like a little thing we send to do our stuff and it comes back with result
+# creating cursor 
 cur= db1.cursor()
 #creating table
 cur.execute("CREATE TABLE ADDRESSES (first_name text, last_name text, address text, city text, state text, zipcode int)")
@@ -90,7 +90,6 @@ def show():
     #adding data into table using python dictionary
     cur.execute("SELECT *, oid FROM ADDRESSES")     # oid is a primary key created by sqllite automatically
     records= cur.fetchall()  # returns a python list which has tuples in its content
-    #cur.fetchmany(10) / cur.fetchone()
 
 
     # loop through records
