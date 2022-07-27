@@ -36,19 +36,19 @@ oid.grid(row=9, column=1, padx=20)
 #creating text labels
 # TEXT LABELS
 f_namelabel = Label(root, text="Enter first name : ")
-f_namelabel.grid(row=0, column=0)
+f_namelabel.grid(row=0, column=0, stick="w")
 l_namelabel = Label(root, text="Enter last name : ")
-l_namelabel.grid(row=1, column=0)
+l_namelabel.grid(row=1, column=0, stick="w")
 addresslabel = Label(root, text="Enter address : ")
-addresslabel.grid(row=2, column=0)
+addresslabel.grid(row=2, column=0, stick="w")
 citylabel = Label(root, text="Enter city name : ")
-citylabel.grid(row=3, column=0)
+citylabel.grid(row=3, column=0, stick="w")
 statelabel = Label(root, text="Enter state : ")
-statelabel.grid(row=4, column=0)
+statelabel.grid(row=4, column=0, stick="w")
 zipcodelabel = Label(root, text="Enter zipcode : ")
-zipcodelabel.grid(row=5, column=0)
+zipcodelabel.grid(row=5, column=0, stick="w")
 oidlabel = Label(root, text="Enter record id : ")
-oidlabel.grid(row=9, column=0)
+oidlabel.grid(row=9, column=0, stick="w")
 
 # you gotta connect your database and cursor inside the every function
 
@@ -135,17 +135,17 @@ def update():
 
     #creating text label
     f_namelabel = Label(edit, text="Enter first name : ")
-    f_namelabel.grid(row=0, column=0)
+    f_namelabel.grid(row=0, column=0, stick="w")
     l_namelabel = Label(edit, text="Enter last name : ")
-    l_namelabel.grid(row=1, column=0)
+    l_namelabel.grid(row=1, column=0, stick="w")
     addresslabel = Label(edit, text="Enter address : ")
-    addresslabel.grid(row=2, column=0)
+    addresslabel.grid(row=2, column=0, stick="w")
     citylabel = Label(edit, text="Enter city name : ")
-    citylabel.grid(row=3, column=0)
+    citylabel.grid(row=3, column=0, stick="w")
     statelabel = Label(edit, text="Enter state : ")
-    statelabel.grid(row=4, column=0)
+    statelabel.grid(row=4, column=0, stick="w")
     zipcodelabel = Label(edit, text="Enter zipcode : ")
-    zipcodelabel.grid(row=5, column=0)
+    zipcodelabel.grid(row=5, column=0, stick="w")
 
     # Entry widget ~~~~~~
     f_name = Entry(edit, width=30, bg='pink2')
